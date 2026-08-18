@@ -2,7 +2,7 @@
 
 Stores basic information about documents related to a client (Account) — e.g. IDs, contracts, invoices, certificates — so users can track what documents exist, their validity period, and their status.
 
-See [requirement.md](requirement.md) for the full requirement, design decisions, and implementation notes.
+See [requirement.md](requirement.md) for the full requirement, design decisions, and implementation notes. For an audience-specific write-up, see [business-documentation.md](business-documentation.md) (what it does and why, for business stakeholders) and [technical-documentation.md](technical-documentation.md) (data model, security, deployment, for developers/admins).
 
 ## What's included
 
