@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Status__c</fullName>
+    <label>Status</label>
+    <description>Current status of the document.</description>
+    <inlineHelpText>Set the current status of this document.</inlineHelpText>
+    <type>Picklist</type>
+    <required>true</required>
+    <trackHistory>true</trackHistory>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>Client_Document_Status</valueSetName>
+    </valueSet>
+</CustomField>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Client Document Access</label>
+    <description>Grants read, create, edit and delete access to Client Documents and their fields for users who work with client Accounts.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <objectPermissions>
+        <object>Client_Document__c</object>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>true</allowDelete>
+        <viewAllRecords>false</viewAllRecords>
+        <modifyAllRecords>false</modifyAllRecords>
+    </objectPermissions>
+    <fieldPermissions>
+        <field>Client_Document__c.Expiration_Date__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <tabSettings>
+        <tab>Client_Document__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

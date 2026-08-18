@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSetTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <valueTranslation>
+        <masterLabel>Active</masterLabel>
+        <translation>Aktívny</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Expired</masterLabel>
+        <translation>Expirovaný</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Pending Review</masterLabel>
+        <translation>Čaká na kontrolu</translation>
+    </valueTranslation>
+    <valueTranslation>
+        <masterLabel>Revoked</masterLabel>
+        <translation>Odvolaný</translation>
+    </valueTranslation>
+</GlobalValueSetTranslation>

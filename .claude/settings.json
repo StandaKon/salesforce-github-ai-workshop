@@ -1,0 +1,14 @@
+{
+  "extraKnownMarketplaces": {
+    "enehano": {
+      "source": {
+        "source": "github",
+        "repo": "Enehano/enehano-claude-kit"
+      },
+      "autoUpdate": true
+    }
+  },
+  "enabledPlugins": {
+    "salesforce-dev@enehano": true
+  }
+}

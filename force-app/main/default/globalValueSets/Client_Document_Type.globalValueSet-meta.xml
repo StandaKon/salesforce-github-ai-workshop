@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Client Document Type</masterLabel>
+    <sorted>false</sorted>
+    <customValue>
+        <fullName>Passport</fullName>
+        <default>false</default>
+        <label>Passport</label>
+    </customValue>
+    <customValue>
+        <fullName>ID_Card</fullName>
+        <default>false</default>
+        <label>ID Card</label>
+    </customValue>
+    <customValue>
+        <fullName>Business_License</fullName>
+        <default>false</default>
+        <label>Business License</label>
+    </customValue>
+    <customValue>
+        <fullName>Contract</fullName>
+        <default>false</default>
+        <label>Contract</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+</GlobalValueSet>
