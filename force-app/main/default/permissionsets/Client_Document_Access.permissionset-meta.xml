@@ -6,6 +6,10 @@
         <field>Client_Document__c.Expiration_Date__c</field>
         <readable>true</readable>
     </fieldPermissions>
+    <tabSettings>
+        <tab>Client_Document__c</tab>
+        <visibility>Available</visibility>
+    </tabSettings>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Client Document Access</label>
     <objectPermissions>
