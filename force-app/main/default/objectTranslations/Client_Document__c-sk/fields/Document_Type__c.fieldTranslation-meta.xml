@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Typ dokumentu</label>
+    <name>Document_Type__c</name>
+    <picklistValues>
+        <masterLabel>Driver&apos;s License</masterLabel>
+        <translation>Vodičský preukaz</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ID Card</masterLabel>
+        <translation>Občiansky preukaz</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Iné</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Passport</masterLabel>
+        <translation>Cestovný pas</translation>
+    </picklistValues>
+</CustomFieldTranslation>

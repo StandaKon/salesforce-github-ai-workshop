@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Document_Number__c</fullName>
+    <caseSensitive>false</caseSensitive>
+    <description>The document&apos;s own identifying number (e.g. ID card or passport number). Must be unique across all client documents.</description>
+    <externalId>false</externalId>
+    <inlineHelpText>Enter the number printed on the document (e.g. ID card or passport number).</inlineHelpText>
+    <label>Document Number</label>
+    <length>50</length>
+    <required>true</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Text</type>
+    <unique>true</unique>
+</CustomField>

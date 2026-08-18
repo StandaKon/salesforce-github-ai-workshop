@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <help>Zadejte číslo uvedené na dokladu (např. číslo občanského průkazu nebo pasu).</help>
+    <label>Číslo dokumentu</label>
+    <name>Document_Number__c</name>
+</CustomFieldTranslation>
