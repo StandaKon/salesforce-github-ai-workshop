@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>ExpirationNotBeforeIssue</fullName>
+    <active>true</active>
+    <description>Ensures the expiration date is not earlier than the issue date when both dates are populated.</description>
+    <errorConditionFormula>AND(
+NOT(ISBLANK(ExpirationDate__c)),
+NOT(ISBLANK(IssueDate__c)),
+ExpirationDate__c &lt; IssueDate__c
+)</errorConditionFormula>
+    <errorMessage>Expiration date cannot be before the issue date.</errorMessage>
+</ValidationRule>
