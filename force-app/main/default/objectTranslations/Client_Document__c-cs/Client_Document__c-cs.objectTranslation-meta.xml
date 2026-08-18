@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Dokument klienta</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Dokumenty klienta</value>
+    </caseValues>
+    <gender>Masculine</gender>
+    <fields>
+        <help>Zadejte přesné číslo uvedené na dokladu, např. číslo pasu nebo občanského průkazu.</help>
+        <label>Číslo dokumentu</label>
+        <name>Document_Number__c</name>
+    </fields>
+    <fields>
+        <help>Vyberte typ dokladu, například Pas nebo Občanský průkaz.</help>
+        <label>Typ dokumentu</label>
+        <name>Document_Type__c</name>
+    </fields>
+    <fields>
+        <label>Klient / Účet</label>
+        <name>Client_Account__c</name>
+    </fields>
+    <fields>
+        <label>Datum vydání</label>
+        <name>Issue_Date__c</name>
+    </fields>
+    <fields>
+        <label>Datum expirace</label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label>Stav</label>
+        <name>Status__c</name>
+    </fields>
+</CustomObjectTranslation>

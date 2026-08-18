@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Client Document Status</masterLabel>
+    <sorted>false</sorted>
+    <customValue>
+        <fullName>Active</fullName>
+        <default>true</default>
+        <label>Active</label>
+    </customValue>
+    <customValue>
+        <fullName>Expired</fullName>
+        <default>false</default>
+        <label>Expired</label>
+    </customValue>
+    <customValue>
+        <fullName>Pending_Review</fullName>
+        <default>false</default>
+        <label>Pending Review</label>
+    </customValue>
+    <customValue>
+        <fullName>Revoked</fullName>
+        <default>false</default>
+        <label>Revoked</label>
+    </customValue>
+</GlobalValueSet>
