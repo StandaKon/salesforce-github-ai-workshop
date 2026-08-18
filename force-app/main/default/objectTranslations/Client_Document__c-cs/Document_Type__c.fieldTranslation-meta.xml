@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Typ dokumentu</label>
+    <name>Document_Type__c</name>
+    <picklistValues>
+        <masterLabel>Certificate</masterLabel>
+        <translation>Certifikát</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Contract</masterLabel>
+        <translation>Smlouva</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Identification Document</masterLabel>
+        <translation>Doklad totožnosti</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice</masterLabel>
+        <translation>Faktura</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Jiné</translation>
+    </picklistValues>
+</CustomFieldTranslation>
