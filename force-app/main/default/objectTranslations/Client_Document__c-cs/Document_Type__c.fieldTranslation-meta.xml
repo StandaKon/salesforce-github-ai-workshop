@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomFieldTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Typ dokumentu</label>
+    <name>Document_Type__c</name>
+    <picklistValues>
+        <masterLabel>Contract</masterLabel>
+        <translation>Smlouva</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Driver&apos;s License</masterLabel>
+        <translation>Řidičský průkaz</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>ID Card</masterLabel>
+        <translation>Občanský průkaz</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Invoice</masterLabel>
+        <translation>Faktura</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Other</masterLabel>
+        <translation>Jiné</translation>
+    </picklistValues>
+    <picklistValues>
+        <masterLabel>Passport</masterLabel>
+        <translation>Cestovní pas</translation>
+    </picklistValues>
+</CustomFieldTranslation>
