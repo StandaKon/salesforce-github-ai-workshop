@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DuplicateRule xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <actionOnInsert>Block</actionOnInsert>
+    <actionOnUpdate>Block</actionOnUpdate>
+    <alertText>A Client Document with this Document Number already exists for this Account. Document Numbers must be unique within an Account (the same number is allowed on a different Account).</alertText>
+    <description>Blocks the creation or update of a Client Document whose Document Number matches an existing Client Document under the same Account. Enforces per-Account uniqueness declaratively since a Validation Rule cannot evaluate sibling records.</description>
+    <duplicateRuleFilter xsi:nil="true"/>
+    <duplicateRuleMatchRules>
+        <matchRuleSObjectType>Client_Document__c</matchRuleSObjectType>
+        <matchingRule>Client_Document_Matching_Rule</matchingRule>
+        <objectMapping xsi:nil="true"/>
+    </duplicateRuleMatchRules>
+    <isActive>true</isActive>
+    <masterLabel>Unique Document Number Per Account</masterLabel>
+    <securityOption>EnforceSharingRules</securityOption>
+    <sortOrder>1</sortOrder>
+</DuplicateRule>

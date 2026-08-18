@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <gender>Masculine</gender>
+    <caseValues>
+        <plural>false</plural>
+        <value>Klientský dokument</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Klientské dokumenty</value>
+    </caseValues>
+    <fields>
+        <name>Account__c</name>
+        <label>Související klient/účet</label>
+    </fields>
+    <fields>
+        <name>Document_Number__c</name>
+        <label>Číslo dokumentu</label>
+    </fields>
+    <fields>
+        <name>Document_Type__c</name>
+        <label>Typ dokumentu</label>
+        <picklistValues>
+            <masterLabel>ID Card</masterLabel>
+            <translation>Občanský průkaz</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passport</masterLabel>
+            <translation>Cestovní pas</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <name>Issue_Date__c</name>
+        <label>Datum vydání</label>
+    </fields>
+    <fields>
+        <name>Expiration_Date__c</name>
+        <label>Datum platnosti do</label>
+    </fields>
+    <fields>
+        <name>Status__c</name>
+        <label>Stav dokumentu</label>
+        <picklistValues>
+            <masterLabel>Valid</masterLabel>
+            <translation>Platný</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Prošlý</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revoked</masterLabel>
+            <translation>Zrušený</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

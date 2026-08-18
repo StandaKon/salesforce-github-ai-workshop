@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Account__c</fullName>
+    <label>Related Client/Account</label>
+    <description>The Account (client) this document belongs to. Client Document is the detail/child in this Master-Detail relationship: it inherits the Account's sharing and is cascade-deleted when the Account is deleted.</description>
+    <inlineHelpText>The client this document belongs to. Cannot be changed after the record is created.</inlineHelpText>
+    <type>MasterDetail</type>
+    <referenceTo>Account</referenceTo>
+    <relationshipLabel>Client Documents</relationshipLabel>
+    <relationshipName>Client_Documents</relationshipName>
+    <relationshipOrder>0</relationshipOrder>
+    <reparentableMasterDetail>false</reparentableMasterDetail>
+    <writeRequiresMasterRead>false</writeRequiresMasterRead>
+</CustomField>

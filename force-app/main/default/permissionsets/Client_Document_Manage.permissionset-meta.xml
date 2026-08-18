@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Client Document Manage</label>
+    <description>Create, Read, and Edit access to Client Document records and all of their fields. Delete is intentionally excluded - documents are retired via the Revoked status, not deletion, to preserve audit history.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <objectPermissions>
+        <object>Client_Document__c</object>
+        <allowCreate>true</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>true</allowEdit>
+        <allowDelete>false</allowDelete>
+        <viewAllRecords>false</viewAllRecords>
+        <modifyAllRecords>false</modifyAllRecords>
+    </objectPermissions>
+    <objectPermissions>
+        <object>Account</object>
+        <allowCreate>false</allowCreate>
+        <allowRead>true</allowRead>
+        <allowEdit>false</allowEdit>
+        <allowDelete>false</allowDelete>
+        <viewAllRecords>false</viewAllRecords>
+        <modifyAllRecords>false</modifyAllRecords>
+    </objectPermissions>
+    <fieldPermissions>
+        <field>Client_Document__c.Expiration_Date__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <field>Client_Document__c.Status__c</field>
+        <readable>true</readable>
+        <editable>true</editable>
+    </fieldPermissions>
+    <tabSettings>
+        <tab>Client_Document__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

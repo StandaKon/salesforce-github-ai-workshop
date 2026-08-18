@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MatchingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <matchingRules>
+        <fullName>Client_Document_Matching_Rule</fullName>
+        <label>Client Document Matching Rule</label>
+        <description>Matches Client Document records that share the same Document Number under the same Account. Used by the Unique Document Number Per Account duplicate rule to enforce per-Account uniqueness (the same Document Number is allowed across different Accounts).</description>
+        <matchingRuleItems>
+            <fieldName>Account__c</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+        </matchingRuleItems>
+        <matchingRuleItems>
+            <fieldName>Document_Number__c</fieldName>
+            <matchingMethod>Exact</matchingMethod>
+            <blankValueBehavior>NullNotAllowed</blankValueBehavior>
+        </matchingRuleItems>
+        <ruleStatus>Active</ruleStatus>
+    </matchingRules>
+</MatchingRules>

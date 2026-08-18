@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expiration_Date_Must_Be_After_Issue_Date</fullName>
+    <active>true</active>
+    <description>Ensures Expiration Date, when populated, is strictly after Issue Date. Records with a blank Expiration Date are not evaluated by this rule (documents that never expire are allowed).</description>
+    <errorConditionFormula>AND(NOT(ISBLANK(Expiration_Date__c)), Expiration_Date__c &lt;= Issue_Date__c)</errorConditionFormula>
+    <errorMessage>Expiration Date must be after Issue Date.</errorMessage>
+</ValidationRule>
