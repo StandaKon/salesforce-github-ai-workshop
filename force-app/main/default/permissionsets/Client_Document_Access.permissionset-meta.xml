@@ -18,6 +18,10 @@
     </fieldPermissions>
     <hasActivationRequired>false</hasActivationRequired>
     <label>Client Document Access</label>
+    <tabSettings>
+        <tab>Client_Document__c</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
     <objectPermissions>
         <allowCreate>true</allowCreate>
         <allowDelete>true</allowDelete>
