@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Expiration_Date__c</fullName>
+    <description>The date the document expires, if applicable.</description>
+    <inlineHelpText>Enter the expiration date printed on the document, if it has one.</inlineHelpText>
+    <label>Expiration Date</label>
+    <required>false</required>
+    <trackHistory>false</trackHistory>
+    <trackTrending>false</trackTrending>
+    <type>Date</type>
+</CustomField>
