@@ -60,6 +60,70 @@
         <plural>true</plural>
         <value><!-- Klientské dokumenty --></value>
     </caseValues>
+    <fields>
+        <label>Klient</label>
+        <name>Client__c</name>
+    </fields>
+    <fields>
+        <label>Číslo dokumentu</label>
+        <name>Document_Number__c</name>
+    </fields>
+    <fields>
+        <label>Typ dokumentu</label>
+        <name>Document_Type__c</name>
+        <picklistValues>
+            <masterLabel>ID_Card</masterLabel>
+            <translation>Občanský průkaz</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passport</masterLabel>
+            <translation>Cestovní pas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Drivers_License</masterLabel>
+            <translation>Řidičský průkaz</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation>Smlouva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation>Faktura</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Jiné</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Stav dokumentu</label>
+        <name>Document_Status__c</name>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Koncept</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid</masterLabel>
+            <translation>Platný</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Prošlý</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revoked</masterLabel>
+            <translation>Zrušený</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Datum vydání</label>
+        <name>Issue_Date__c</name>
+    </fields>
+    <fields>
+        <label>Datum platnosti</label>
+        <name>Expiration_Date__c</name>
+    </fields>
     <gender>Masculine</gender>
     <nameFieldLabel>Název klientského dokumentu</nameFieldLabel>
     <validationRules>
