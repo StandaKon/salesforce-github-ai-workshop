@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Task Created Update Lead Status {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Task Created Update Lead Status</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <status>Active</status>
+    <description>When a Task is created against a Lead (WhoId is a Lead), moves that Lead from New to In Progress via the shared Lead_Set_In_Progress subflow.</description>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Call_Lead_Set_In_Progress</targetReference>
+        </connector>
+        <filterFormula>AND(NOT(ISBLANK({!$Record.WhoId})), LEFT({!$Record.WhoId}, 3) = &quot;00Q&quot;)</filterFormula>
+        <filterLogic>formula</filterLogic>
+        <object>Task</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <subflows>
+        <name>Call_Lead_Set_In_Progress</name>
+        <label>Update Lead Status</label>
+        <locationX>176</locationX>
+        <locationY>120</locationY>
+        <flowName>Lead_Set_In_Progress</flowName>
+        <inputAssignments>
+            <name>LeadId</name>
+            <value>
+                <elementReference>$Record.WhoId</elementReference>
+            </value>
+        </inputAssignments>
+    </subflows>
+</Flow>

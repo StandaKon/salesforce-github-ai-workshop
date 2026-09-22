@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>63.0</apiVersion>
+    <environments>Default</environments>
+    <interviewLabel>Lead Set In Progress {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead Set In Progress</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <status>Active</status>
+    <description>Given a Lead Id, moves the Lead to In Progress if it is currently New. Does nothing if the Lead is already In Progress or Closed. Called as a subflow from the Task/Event creation flows.</description>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Get_Lead</targetReference>
+        </connector>
+    </start>
+    <variables>
+        <name>LeadId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <recordLookups>
+        <name>Get_Lead</name>
+        <label>Get Lead</label>
+        <locationX>176</locationX>
+        <locationY>120</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Decision_Is_New</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>LeadId</elementReference>
+            </value>
+        </filters>
+        <getFirstRecordOnly>true</getFirstRecordOnly>
+        <object>Lead</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordLookups>
+    <decisions>
+        <name>Decision_Is_New</name>
+        <label>Is Lead New?</label>
+        <locationX>176</locationX>
+        <locationY>240</locationY>
+        <defaultConnectorLabel>No Change Needed</defaultConnectorLabel>
+        <rules>
+            <name>Is_New</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>Get_Lead.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>New</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Lead_Status</targetReference>
+            </connector>
+            <label>Is New</label>
+        </rules>
+    </decisions>
+    <recordUpdates>
+        <name>Update_Lead_Status</name>
+        <label>Update Lead Status</label>
+        <locationX>176</locationX>
+        <locationY>360</locationY>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Get_Lead.Id</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>In Progress</stringValue>
+            </value>
+        </inputAssignments>
+        <object>Lead</object>
+    </recordUpdates>
+</Flow>

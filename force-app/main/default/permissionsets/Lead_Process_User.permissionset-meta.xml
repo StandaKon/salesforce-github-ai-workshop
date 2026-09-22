@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Grants access to the custom Lead Process fields (Secondary Phone, Outcome, Closing Reason). Standard Lead object access comes from the user's existing profile/permission sets.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Secondary_Phone__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Outcome__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Lead.Closing_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Lead Process User</label>
+</PermissionSet>
