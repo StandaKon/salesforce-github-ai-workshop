@@ -1,0 +1,73 @@
+:host {
+    --cvp-brand-green: #2e8b57;
+    --cvp-neutral-fill: #fafafa;
+    --cvp-red: #c0392b;
+    --cvp-amber: #e67e22;
+    --cvp-olive-green: #6b8e23;
+
+    display: block;
+}
+
+.cvp-tile-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    margin-bottom: 0.75rem;
+}
+
+.cvp-card {
+    --slds-c-card-color-background: var(--cvp-neutral-fill);
+    --slds-c-card-color-border: var(--cvp-brand-green);
+    --slds-c-card-radius-border: 0.75rem;
+    --slds-c-icon-color-foreground-default: var(--cvp-brand-green);
+    border-left: 4px solid var(--cvp-brand-green);
+    border-radius: 0.75rem;
+}
+
+.cvp-tile {
+    flex: 1 1 200px;
+}
+
+.cvp-tile-value {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.cvp-action-card {
+    display: block;
+}
+
+.cvp-action-label {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.cvp-action-label--high {
+    color: var(--cvp-red);
+}
+
+.cvp-action-label--medium {
+    color: var(--cvp-amber);
+}
+
+.cvp-action-label--low {
+    color: var(--cvp-olive-green);
+}
+
+.cvp-action-label--none {
+    color: var(--slds-g-color-neutral-base-50, #706e6b);
+}
+
+.cvp-action-meta {
+    display: flex;
+    gap: 1.25rem;
+    margin-top: 0.5rem;
+    font-size: 0.8125rem;
+    color: #3e3e3c;
+}
+
+.cvp-action-meta-label {
+    font-weight: 600;
+    margin-right: 0.25rem;
+    color: #706e6b;
+}
