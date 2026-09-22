@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>Client Document</label>
+    <pluralLabel>Client Documents</pluralLabel>
+    <description>Tracks basic metadata about a document related to a client (Account), such as its type, issue and expiration dates, and lifecycle status. Does not store the document file itself.</description>
+    <sharingModel>ControlledByParent</sharingModel>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <visibility>Public</visibility>
+    <nameField>
+        <label>Document Number</label>
+        <type>Text</type>
+    </nameField>
+    <enableActivities>true</enableActivities>
+    <enableHistory>true</enableHistory>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+</CustomObject>
