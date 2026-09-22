@@ -33,23 +33,20 @@ A validation rule (`Expiration_After_Issue_Date`) blocks saving a record whose E
 
 ## Granting access
 
-Assign the **Client Document User** permission set to any user who needs to create/view/edit/delete documents:
+Assign the **Client Document User** permission set to any user who needs to create/view/edit documents:
 
 ```
 sf org assign permset -n Client_Document_User -o <org alias>
 ```
 
-The permission set grants Read/Create/Edit/Delete on Client Document, Read on Account (required because of the master-detail relationship), and field-level access to the one optional field (`Expiration_Date__c` — required fields are always visible to anyone with object access).
+The permission set grants Read/Create/Edit (**no Delete**) on Client Document, Read on Account (required because of the master-detail relationship), and field-level access to the one optional field (`Expiration_Date__c` — required fields are always visible to anyone with object access; Salesforce doesn't allow an explicit FLS entry for a required field). Delete was intentionally left out: these records can hold sensitive personal documents (ID cards, passports), and a document should be retired via the `Document_Status__c` = "Revoked" value rather than deleted outright, so there's always a record that it existed.
 
 ## Translations
 
-Czech and Slovak labels/picklist values are included. For them to actually appear in the UI, the org needs those languages enabled under **Setup → Translation Workbench → Company Languages** (add cs/sk as supported languages first if not already active) — this is an org configuration step, not something the metadata deploy can turn on by itself. Only the nominative grammatical case was translated for the object name; other Czech/Slovak noun cases were left as Salesforce's auto-generated (commented-out) nominative fallback and can be refined later by a native speaker if needed.
+Czech and Slovak labels are included for the object name, all field labels, and all picklist values on `Document_Type__c` and `Document_Status__c`. For them to actually appear in the UI, the org needs those languages enabled under **Setup → Translation Workbench → Company Languages** (add cs/sk as supported languages first if not already active) — this is an org configuration step, not something the metadata deploy can turn on by itself. Only the nominative grammatical case was translated for the object name; other Czech/Slovak noun cases were left as Salesforce's auto-generated (commented-out) nominative fallback and can be refined later by a native speaker if needed.
 
 ## Testing performed
 
-- Deployed via `sf project deploy start` to the workshop dev org — succeeded (12/12 components).
-- Created a real Account + Client Document record via `sf data create record`; confirmed required fields/picklists/defaults work.
-- Confirmed the validation rule blocks an expiration date earlier than the issue date.
-- Confirmed cascade delete: deleting the Account removed its Client Document record.
-- Retrieved the metadata back from the org (`sf project retrieve start`) to confirm it round-trips cleanly.
-- Test Account/record were deleted afterward — no leftover data in the org.
+- Validated with `sf project deploy start --dry-run` (check-only, no changes saved) against the workshop dev org — succeeded, 0 failures across all 13 components.
+- This caught a real error during development: an explicit field-level permission entry on a *required* field (`Document_Status__c`) is rejected by Salesforce, since required fields are always visible/editable to anyone with object access. Fixed by only granting FLS on the one optional field, `Expiration_Date__c`.
+- A real deploy, live record creation, and retrieve round-trip were **not** performed in this session (dry-run only, by request) — still open as next steps before merging.

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
-    <description>Grants access to view, create, edit, and delete Client Document records and their fields.</description>
+    <description>Grants access to view, create, and edit Client Document records and their fields.</description>
     <fieldPermissions>
         <editable>true</editable>
         <field>Client_Document__c.Expiration_Date__c</field>
@@ -20,7 +20,7 @@
     </objectPermissions>
     <objectPermissions>
         <allowCreate>true</allowCreate>
-        <allowDelete>true</allowDelete>
+        <allowDelete>false</allowDelete>
         <allowEdit>true</allowEdit>
         <allowRead>true</allowRead>
         <modifyAllRecords>false</modifyAllRecords>

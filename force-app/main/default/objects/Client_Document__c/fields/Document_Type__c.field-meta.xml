@@ -2,8 +2,8 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Document_Type__c</fullName>
     <label>Document Type</label>
+    <description>The kind of document this record represents.</description>
     <required>true</required>
-    <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>

@@ -25,8 +25,8 @@ See [client-document-requirements.md](./client-document-requirements.md) for the
 ## Security
 
 **Permission Set:** `Client_Document_User`
-- Object permissions: Read, Create, Edit, Delete (no View All / Modify All — sharing is inherited from the Account via master-detail, so org-wide "view all" bypass isn't needed).
-- Field permissions: Read + Edit on all fields above.
+- Object permissions: Read, Create, Edit — **no Delete** (no View All / Modify All — sharing is inherited from the Account via master-detail, so org-wide "view all" bypass isn't needed). Delete was deliberately excluded: these records can hold compliance-sensitive personal documents (ID cards, passports), and open delete access would let any assigned user permanently remove that evidence with no audit trail. `Document_Status__c` already has a "Revoked" value for retiring a document without destroying the record.
+- Field permissions: Read + Edit on the one optional field, `Expiration_Date__c` (required fields can't take an explicit FLS entry — Salesforce always shows them to anyone with object access).
 - Assigned manually to users/profiles that need to manage documents (not baked into a default profile, to keep the change additive/non-disruptive).
 
 ## UI
@@ -58,3 +58,9 @@ A: Restricted picklists keep `Document_Type__c`/`Document_Status__c` values cons
 
 **Q: Who can see the FlexiPage / does everyone get the permission set?**
 A: The permission set is opt-in — nobody gets access automatically. This avoids accidentally exposing a new object org-wide before the business has decided who should manage documents. The FlexiPage itself has no security implication (FLS still governs field visibility for whoever views a record).
+
+**Q: Should the permission set allow deleting a document?**
+A: No. Documents here can hold sensitive personal data (ID cards, passports), so open Delete access would let any assigned user permanently destroy that record with no built-in audit trail. `Document_Status__c` already has a "Revoked" value for retiring a document without deleting it. If a real deletion need shows up later, it should go through an admin-only permission set instead.
+
+**Q: Should field history tracking be enabled, given the compliance angle?**
+A: Considered and left off for this v1 (`enableHistory = false`) — the requirement asks only to store the data, not to audit changes to it, and turning it on is a cheap addition to revisit later if the business asks for a change history on document number/status.
