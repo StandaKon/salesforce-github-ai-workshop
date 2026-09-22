@@ -170,29 +170,7 @@
                 <identifier>RecordWebsiteColumn2Field0</identifier>
             </fieldInstance>
         </itemInstances>
-        
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.ICO__c</fieldItem>
-                <identifier>RecordICO__cColumn2Field1</identifier>
-            </fieldInstance>
-        </itemInstances>
-        
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.DIC__c</fieldItem>
-                <identifier>RecordDIC__cColumn2Field2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        
+
         <name>Facet-FieldSection-Column2</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -292,20 +270,6 @@
                 </componentInstanceProperties>
                 <componentName>flexipage:tabset</componentName>
                 <identifier>flexipage_tabset</identifier>
-            </componentInstance>
-        </itemInstances>
-        <itemInstances>
-            <componentInstance>
-                <componentInstanceProperties>
-                    <name>relatedListId</name>
-                    <value>Client_Documents</value>
-                </componentInstanceProperties>
-                <componentInstanceProperties>
-                    <name>rowCount</name>
-                    <value>5</value>
-                </componentInstanceProperties>
-                <componentName>flexipage:relatedListSingleContainer</componentName>
-                <identifier>relatedList_clientDocuments_1</identifier>
             </componentInstance>
         </itemInstances>
         <name>main</name>

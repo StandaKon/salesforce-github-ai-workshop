@@ -61,8 +61,16 @@
         <label>Dátum vydania</label>
         <name>Issue_Date__c</name>
     </fields>
-    <gender>MasculineInanimate</gender>
-    <label>Dokument klienta</label>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Dokument klienta</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Dokumenty klienta</value>
+    </caseValues>
+    <gender>Masculine</gender>
     <nameFieldLabel>Číslo dokumentu</nameFieldLabel>
-    <pluralLabel>Dokumenty klienta</pluralLabel>
 </CustomObjectTranslation>
