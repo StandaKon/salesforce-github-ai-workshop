@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Secondary_Phone__c</fullName>
+    <description>Alternate phone number for the Lead, captured optionally via the Lead Request flow.</description>
+    <inlineHelpText>An alternate phone number for this Lead, in addition to the primary Phone field.</inlineHelpText>
+    <label>Secondary Phone</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Phone</type>
+</CustomField>
