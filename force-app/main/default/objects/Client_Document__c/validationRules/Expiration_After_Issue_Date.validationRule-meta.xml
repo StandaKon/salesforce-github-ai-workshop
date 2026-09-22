@@ -3,5 +3,6 @@
     <fullName>Expiration_After_Issue_Date</fullName>
     <active>true</active>
     <errorConditionFormula>NOT(ISBLANK(Expiration_Date__c)) &amp;&amp; Expiration_Date__c &lt; Issue_Date__c</errorConditionFormula>
+    <errorDisplayField>Expiration_Date__c</errorDisplayField>
     <errorMessage>Expiration Date cannot be earlier than Issue Date.</errorMessage>
 </ValidationRule>

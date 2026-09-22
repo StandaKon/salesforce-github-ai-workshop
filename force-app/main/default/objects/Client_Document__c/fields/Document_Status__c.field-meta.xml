@@ -2,8 +2,8 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Document_Status__c</fullName>
     <label>Document Status</label>
+    <description>The current lifecycle status of the document.</description>
     <required>true</required>
-    <trackTrending>false</trackTrending>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>
