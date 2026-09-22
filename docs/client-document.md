@@ -43,7 +43,7 @@ The permission set grants Read/Create/Edit/Delete on Client Document, Read on Ac
 
 ## Translations
 
-Czech and Slovak labels/picklist values are included. For them to actually appear in the UI, the org needs those languages enabled under **Setup → Translation Workbench → Company Languages** (add cs/sk as supported languages first if not already active) — this is an org configuration step, not something the metadata deploy can turn on by itself. Only the nominative grammatical case was translated for the object name; other Czech/Slovak noun cases were left as Salesforce's auto-generated (commented-out) nominative fallback and can be refined later by a native speaker if needed.
+Czech and Slovak labels/picklist values are included. For them to actually appear in the UI, the org needs those languages enabled under **Setup → Translation Workbench → Company Languages** (add cs/sk as supported languages first if not already active) — this is an org configuration step, not something the metadata deploy can turn on by itself. All six grammatical cases (nominative through locative) are now translated for the object name in both languages, so Salesforce's dynamic sentence generation (e.g. "Related Client Document") renders correctly regardless of case. These declensions are a best-effort translation, not yet reviewed by a native speaker — flag for review before relying on them in production.
 
 ## Testing performed
 

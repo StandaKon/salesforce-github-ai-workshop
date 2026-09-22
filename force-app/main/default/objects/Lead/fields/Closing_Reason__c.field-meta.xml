@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Closing_Reason__c</fullName>
+    <label>Closing Reason</label>
+    <required>false</required>
+    <trackTrending>false</trackTrending>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetDefinition>
+            <sorted>false</sorted>
+            <value>
+                <fullName>Won</fullName>
+                <default>false</default>
+                <label>Won</label>
+            </value>
+            <value>
+                <fullName>Lost_Price</fullName>
+                <default>false</default>
+                <label>Lost - Price</label>
+            </value>
+            <value>
+                <fullName>Lost_No_Response</fullName>
+                <default>false</default>
+                <label>Lost - No Response</label>
+            </value>
+            <value>
+                <fullName>Lost_Not_Interested</fullName>
+                <default>false</default>
+                <label>Lost - Not Interested</label>
+            </value>
+            <value>
+                <fullName>Lost_Duplicate</fullName>
+                <default>false</default>
+                <label>Lost - Duplicate</label>
+            </value>
+            <value>
+                <fullName>Other</fullName>
+                <default>false</default>
+                <label>Other</label>
+            </value>
+        </valueSetDefinition>
+    </valueSet>
+</CustomField>

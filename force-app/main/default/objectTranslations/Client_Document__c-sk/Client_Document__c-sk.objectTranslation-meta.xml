@@ -13,52 +13,52 @@
     <caseValues>
         <caseType>Accusative</caseType>
         <plural>false</plural>
-        <value><!-- Klientský dokument --></value>
+        <value>Klientský dokument</value>
     </caseValues>
     <caseValues>
         <caseType>Accusative</caseType>
         <plural>true</plural>
-        <value><!-- Klientské dokumenty --></value>
+        <value>Klientské dokumenty</value>
     </caseValues>
     <caseValues>
         <caseType>Genitive</caseType>
         <plural>false</plural>
-        <value><!-- Klientský dokument --></value>
+        <value>Klientského dokumentu</value>
     </caseValues>
     <caseValues>
         <caseType>Genitive</caseType>
         <plural>true</plural>
-        <value><!-- Klientské dokumenty --></value>
+        <value>Klientských dokumentov</value>
     </caseValues>
     <caseValues>
         <caseType>Dative</caseType>
         <plural>false</plural>
-        <value><!-- Klientský dokument --></value>
+        <value>Klientskému dokumentu</value>
     </caseValues>
     <caseValues>
         <caseType>Dative</caseType>
         <plural>true</plural>
-        <value><!-- Klientské dokumenty --></value>
+        <value>Klientským dokumentom</value>
     </caseValues>
     <caseValues>
         <caseType>Instrumental</caseType>
         <plural>false</plural>
-        <value><!-- Klientský dokument --></value>
+        <value>Klientským dokumentom</value>
     </caseValues>
     <caseValues>
         <caseType>Instrumental</caseType>
         <plural>true</plural>
-        <value><!-- Klientské dokumenty --></value>
+        <value>Klientskými dokumentmi</value>
     </caseValues>
     <caseValues>
         <caseType>Locative</caseType>
         <plural>false</plural>
-        <value><!-- Klientský dokument --></value>
+        <value>Klientskom dokumente</value>
     </caseValues>
     <caseValues>
         <caseType>Locative</caseType>
         <plural>true</plural>
-        <value><!-- Klientské dokumenty --></value>
+        <value>Klientských dokumentoch</value>
     </caseValues>
     <gender>Masculine</gender>
     <nameFieldLabel>Názov klientského dokumentu</nameFieldLabel>
