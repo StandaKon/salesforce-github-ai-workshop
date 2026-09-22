@@ -1,0 +1,58 @@
+<template>
+    <template lwc:if={errorMessage}>
+        <div class="slds-text-color_error" role="alert">{errorMessage}</div>
+    </template>
+    <template lwc:else>
+        <div class="cvp-tile-grid">
+            <lightning-card class="cvp-card cvp-tile" icon-name="utility:money" title="Portfolio Value">
+                <div class="cvp-tile-value slds-p-horizontal_medium slds-p-bottom_medium">
+                    <lightning-formatted-number value={portfolioValue} format-style="currency"></lightning-formatted-number>
+                </div>
+            </lightning-card>
+
+            <lightning-card class="cvp-card cvp-tile" icon-name="utility:package" title="Active Products">
+                <div class="cvp-tile-value slds-p-horizontal_medium slds-p-bottom_medium">
+                    <lightning-formatted-number value={activeProducts}></lightning-formatted-number>
+                </div>
+            </lightning-card>
+
+            <lightning-card class="cvp-card cvp-tile" icon-name="utility:priority" title="Credit Exposure">
+                <div class="cvp-tile-value slds-p-horizontal_medium slds-p-bottom_medium">
+                    <lightning-formatted-number value={creditExposure} format-style="currency"></lightning-formatted-number>
+                </div>
+            </lightning-card>
+
+            <lightning-card class="cvp-card cvp-tile" icon-name="utility:trending" title="Client Profitability">
+                <div class="cvp-tile-value slds-p-horizontal_medium slds-p-bottom_medium">
+                    <lightning-formatted-number value={profitability} format-style="currency"></lightning-formatted-number>
+                </div>
+            </lightning-card>
+        </div>
+
+        <lightning-card class="cvp-card cvp-action-card" icon-name={nextBestActionIcon} title="Next Best Action">
+            <div class="slds-p-horizontal_medium slds-p-bottom_medium">
+                <template lwc:if={hasNextBestAction}>
+                    <span class={nextBestActionLabelCssClass}>{nextBestActionLabel}</span>
+                </template>
+                <template lwc:else>
+                    <span class="cvp-action-label cvp-action-label--none">No recommendation yet</span>
+                </template>
+
+                <div class="cvp-action-meta">
+                    <template lwc:if={hasCrossSellPotential}>
+                        <span class="cvp-action-meta-item">
+                            <span class="cvp-action-meta-label">Cross-Sell Potential:</span>
+                            {crossSellPotential}
+                        </span>
+                    </template>
+                    <template lwc:if={hasLastContactDate}>
+                        <span class="cvp-action-meta-item">
+                            <span class="cvp-action-meta-label">Last Contact:</span>
+                            <lightning-formatted-date-time value={lastContactDate} year="numeric" month="short" day="2-digit" time-zone="UTC"></lightning-formatted-date-time>
+                        </span>
+                    </template>
+                </div>
+            </div>
+        </lightning-card>
+    </template>
+</template>

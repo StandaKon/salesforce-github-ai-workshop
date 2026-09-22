@@ -1,0 +1,81 @@
+{
+  "0AfgK00000UAxX0SAL": {
+    "source-dir": [
+      "force-app/main/default/objects/Account_Document__c",
+      "force-app/main/default/flexipages/Account_Document_Record_Page.flexipage-meta.xml",
+      "force-app/main/default/permissionsets/Account_Document_User.permissionset-meta.xml",
+      "force-app/main/default/objectTranslations/Account_Document__c-cs",
+      "force-app/main/default/objectTranslations/Account_Document__c-sk",
+      "force-app/main/default/layouts/Account-Account Layout.layout-meta.xml",
+      "force-app/main/default/layouts/Account-Account %28Support%29 Layout.layout-meta.xml",
+      "force-app/main/default/layouts/Account-Account %28Marketing%29 Layout.layout-meta.xml",
+      "force-app/main/default/layouts/Account-Account %28Sales%29 Layout.layout-meta.xml"
+    ],
+    "dry-run": true,
+    "ignore-conflicts": true,
+    "wait": 15,
+    "json": true,
+    "ignore-errors": false,
+    "ignore-warnings": false,
+    "target-org": "tereza.jankova.8ea95989c156@agentforce.com",
+    "test-level": "NoTestRun",
+    "api": "SOAP",
+    "timestamp": "2026-09-22T09:07:05.957Z",
+    "status": "Failed"
+  },
+  "0AfgK00000UAyJNSA1": {
+    "source-dir": [
+      "force-app/main/default/objects/Account_Document__c",
+      "force-app/main/default/flexipages/Account_Document_Record_Page.flexipage-meta.xml",
+      "force-app/main/default/permissionsets/Account_Document_User.permissionset-meta.xml",
+      "force-app/main/default/objectTranslations/Account_Document__c-cs",
+      "force-app/main/default/objectTranslations/Account_Document__c-sk"
+    ],
+    "dry-run": true,
+    "ignore-conflicts": true,
+    "wait": 15,
+    "json": true,
+    "ignore-errors": false,
+    "ignore-warnings": false,
+    "target-org": "tereza.jankova.8ea95989c156@agentforce.com",
+    "test-level": "NoTestRun",
+    "api": "SOAP",
+    "timestamp": "2026-09-22T09:07:53.147Z",
+    "status": "Failed"
+  },
+  "0AfgK00000UAp82SAD": {
+    "source-dir": [
+      "force-app/main/default/objects/Account_Document__c",
+      "force-app/main/default/flexipages/Account_Document_Record_Page.flexipage-meta.xml",
+      "force-app/main/default/permissionsets/Account_Document_User.permissionset-meta.xml",
+      "force-app/main/default/objectTranslations/Account_Document__c-cs",
+      "force-app/main/default/objectTranslations/Account_Document__c-sk"
+    ],
+    "ignore-conflicts": true,
+    "ignore-warnings": true,
+    "wait": 15,
+    "json": true,
+    "dry-run": false,
+    "ignore-errors": false,
+    "target-org": "tereza.jankova.8ea95989c156@agentforce.com",
+    "test-level": "NoTestRun",
+    "api": "SOAP",
+    "timestamp": "2026-09-22T09:08:10.868Z",
+    "status": "Succeeded"
+  },
+  "0AfgK00000UASmZSAX": {
+    "source-dir": [
+      "force-app/main/default/objects/Account_Document__c/fields/Expiration_Date__c.field-meta.xml"
+    ],
+    "ignore-conflicts": true,
+    "wait": 10,
+    "json": true,
+    "dry-run": false,
+    "ignore-errors": false,
+    "ignore-warnings": false,
+    "target-org": "tereza.jankova.8ea95989c156@agentforce.com",
+    "test-level": "NoTestRun",
+    "api": "SOAP",
+    "timestamp": "2026-09-22T09:10:49.499Z"
+  }
+}
