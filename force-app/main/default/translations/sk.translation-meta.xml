@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Translations xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customLabels>
+        <name>Client_Document_Duplicate_Number_Error</name>
+        <label>Dokument s týmto číslom dokumentu už existuje.</label>
+    </customLabels>
+    <customLabels>
+        <name>Client_Document_Archive_Failed_Error</name>
+        <label>Klientské dokumenty tohto účtu sa nepodarilo zarchivovať, mazanie bolo zrušené. Skúste to prosím znova alebo kontaktujte administrátora.</label>
+    </customLabels>
+</Translations>

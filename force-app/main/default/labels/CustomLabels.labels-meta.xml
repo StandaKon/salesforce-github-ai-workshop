@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>Client_Document_Duplicate_Number_Error</fullName>
+        <categories>Client Document</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Shown when a Document Number duplicates another Client Document.</shortDescription>
+        <value>A document with this Document Number already exists.</value>
+    </labels>
+    <labels>
+        <fullName>Client_Document_Archive_Failed_Error</fullName>
+        <categories>Client Document</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Blocks Account deletion when its Client Documents fail to archive.</shortDescription>
+        <value>This Account's Client Documents could not be archived, so the deletion was cancelled. Please try again or contact your administrator.</value>
+    </labels>
+</CustomLabels>
