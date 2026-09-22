@@ -2,7 +2,8 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Issue_Date__c</fullName>
     <label>Issue Date</label>
-    <required>true</required>
-    <trackTrending>false</trackTrending>
+    <description>Date the document was issued.</description>
+    <inlineHelpText>Enter the date shown on the document as its issue date.</inlineHelpText>
     <type>Date</type>
+    <required>false</required>
 </CustomField>

@@ -1,69 +1,76 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label>Účet</label>
+        <name>Account__c</name>
+        <relationshipLabel>Dokumenty klienta</relationshipLabel>
+    </fields>
+    <fields>
+        <label>Stav dokumentu</label>
+        <name>Document_Status__c</name>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation>Koncept</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation>Vypršaný</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revoked</masterLabel>
+            <translation>Zrušený</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Valid</masterLabel>
+            <translation>Platný</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Typ dokumentu</label>
+        <name>Document_Type__c</name>
+        <picklistValues>
+            <masterLabel>Contract</masterLabel>
+            <translation>Zmluva</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Driver's License</masterLabel>
+            <translation>Vodičský preukaz</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID Card</masterLabel>
+            <translation>Občiansky preukaz</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Invoice</masterLabel>
+            <translation>Faktúra</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Iné</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Passport</masterLabel>
+            <translation>Cestovný pas</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label>Dátum platnosti do</label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label>Dátum vydania</label>
+        <name>Issue_Date__c</name>
+    </fields>
     <caseValues>
         <caseType>Nominative</caseType>
         <plural>false</plural>
-        <value>Klientský dokument</value>
+        <value>Dokument klienta</value>
     </caseValues>
     <caseValues>
         <caseType>Nominative</caseType>
         <plural>true</plural>
-        <value>Klientské dokumenty</value>
-    </caseValues>
-    <caseValues>
-        <caseType>Accusative</caseType>
-        <plural>false</plural>
-        <value><!-- Klientský dokument --></value>
-    </caseValues>
-    <caseValues>
-        <caseType>Accusative</caseType>
-        <plural>true</plural>
-        <value><!-- Klientské dokumenty --></value>
-    </caseValues>
-    <caseValues>
-        <caseType>Genitive</caseType>
-        <plural>false</plural>
-        <value><!-- Klientský dokument --></value>
-    </caseValues>
-    <caseValues>
-        <caseType>Genitive</caseType>
-        <plural>true</plural>
-        <value><!-- Klientské dokumenty --></value>
-    </caseValues>
-    <caseValues>
-        <caseType>Dative</caseType>
-        <plural>false</plural>
-        <value><!-- Klientský dokument --></value>
-    </caseValues>
-    <caseValues>
-        <caseType>Dative</caseType>
-        <plural>true</plural>
-        <value><!-- Klientské dokumenty --></value>
-    </caseValues>
-    <caseValues>
-        <caseType>Instrumental</caseType>
-        <plural>false</plural>
-        <value><!-- Klientský dokument --></value>
-    </caseValues>
-    <caseValues>
-        <caseType>Instrumental</caseType>
-        <plural>true</plural>
-        <value><!-- Klientské dokumenty --></value>
-    </caseValues>
-    <caseValues>
-        <caseType>Locative</caseType>
-        <plural>false</plural>
-        <value><!-- Klientský dokument --></value>
-    </caseValues>
-    <caseValues>
-        <caseType>Locative</caseType>
-        <plural>true</plural>
-        <value><!-- Klientské dokumenty --></value>
+        <value>Dokumenty klienta</value>
     </caseValues>
     <gender>Masculine</gender>
-    <nameFieldLabel>Názov klientského dokumentu</nameFieldLabel>
-    <validationRules>
-        <errorMessage>Dátum platnosti nemôže byť skorší ako dátum vydania.</errorMessage>
-        <name>Expiration_After_Issue_Date</name>
-    </validationRules>
+    <nameFieldLabel>Číslo dokumentu</nameFieldLabel>
 </CustomObjectTranslation>

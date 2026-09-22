@@ -2,8 +2,8 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Document_Type__c</fullName>
     <label>Document Type</label>
-    <required>true</required>
-    <trackTrending>false</trackTrending>
+    <description>Type of document being tracked, e.g. an identification document, contract, or invoice.</description>
+    <inlineHelpText>Select the kind of document this record represents.</inlineHelpText>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>

@@ -2,8 +2,8 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Document_Status__c</fullName>
     <label>Document Status</label>
-    <required>true</required>
-    <trackTrending>false</trackTrending>
+    <description>Current lifecycle status of the document record.</description>
+    <inlineHelpText>Tracks whether the document is still being prepared, currently valid, expired, or revoked. This is set manually and is not updated automatically.</inlineHelpText>
     <type>Picklist</type>
     <valueSet>
         <restricted>true</restricted>

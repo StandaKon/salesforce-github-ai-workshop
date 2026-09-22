@@ -2,7 +2,8 @@
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
     <fullName>Expiration_Date__c</fullName>
     <label>Expiration Date</label>
-    <required>false</required>
-    <trackTrending>false</trackTrending>
+    <description>Date the document stops being valid.</description>
+    <inlineHelpText>Enter the date shown on the document as its expiration date, if applicable.</inlineHelpText>
     <type>Date</type>
+    <required>false</required>
 </CustomField>

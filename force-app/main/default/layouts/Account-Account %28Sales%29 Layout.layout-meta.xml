@@ -377,15 +377,6 @@
         <relatedList>RelatedContactList</relatedList>
     </relatedLists>
     <relatedLists>
-        <fields>NAME</fields>
-        <fields>Document_Number__c</fields>
-        <fields>Document_Type__c</fields>
-        <fields>Document_Status__c</fields>
-        <fields>Issue_Date__c</fields>
-        <fields>Expiration_Date__c</fields>
-        <relatedList>Client_Document__c.Client__c</relatedList>
-    </relatedLists>
-    <relatedLists>
         <fields>OPPORTUNITY.NAME</fields>
         <fields>OPPORTUNITY.STAGE_NAME</fields>
         <fields>OPPORTUNITY.AMOUNT</fields>

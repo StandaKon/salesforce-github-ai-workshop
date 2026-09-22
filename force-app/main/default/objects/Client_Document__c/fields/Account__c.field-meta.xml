@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Client__c</fullName>
-    <label>Client</label>
+    <fullName>Account__c</fullName>
+    <label>Account</label>
+    <description>Parent Account this document belongs to. Sharing and deletion of Client Document records are fully controlled by this relationship (Master-Detail): deleting the Account deletes its Client Documents.</description>
+    <type>MasterDetail</type>
     <referenceTo>Account</referenceTo>
     <relationshipLabel>Client Documents</relationshipLabel>
     <relationshipName>Client_Documents</relationshipName>
     <relationshipOrder>0</relationshipOrder>
     <reparentableMasterDetail>false</reparentableMasterDetail>
-    <trackTrending>false</trackTrending>
-    <type>MasterDetail</type>
     <writeRequiresMasterRead>false</writeRequiresMasterRead>
 </CustomField>

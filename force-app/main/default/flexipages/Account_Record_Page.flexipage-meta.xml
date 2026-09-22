@@ -25,8 +25,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Document_Type__c</fieldItem>
-                <identifier>RecordDocument_Type__cSecondaryField0</identifier>
+                <fieldItem>Record.Phone</fieldItem>
+                <identifier>RecordPhoneSecondaryField0</identifier>
             </fieldInstance>
         </itemInstances>
         
@@ -36,8 +36,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Document_Status__c</fieldItem>
-                <identifier>RecordDocument_Status__cSecondaryField1</identifier>
+                <fieldItem>Record.Industry</fieldItem>
+                <identifier>RecordIndustrySecondaryField1</identifier>
             </fieldInstance>
         </itemInstances>
         
@@ -47,19 +47,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Issue_Date__c</fieldItem>
-                <identifier>RecordIssue_Date__cSecondaryField2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Expiration_Date__c</fieldItem>
-                <identifier>RecordExpiration_Date__cSecondaryField3</identifier>
+                <fieldItem>Record.Website</fieldItem>
+                <identifier>RecordWebsiteSecondaryField2</identifier>
             </fieldInstance>
         </itemInstances>
         
@@ -148,8 +137,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Account__c</fieldItem>
-                <identifier>RecordAccount__cColumn1Field1</identifier>
+                <fieldItem>Record.Phone</fieldItem>
+                <identifier>RecordPhoneColumn1Field1</identifier>
             </fieldInstance>
         </itemInstances>
         
@@ -159,8 +148,8 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Document_Type__c</fieldItem>
-                <identifier>RecordDocument_Type__cColumn1Field2</identifier>
+                <fieldItem>Record.Industry</fieldItem>
+                <identifier>RecordIndustryColumn1Field2</identifier>
             </fieldInstance>
         </itemInstances>
         
@@ -177,33 +166,11 @@
                     <name>uiBehavior</name>
                     <value>none</value>
                 </fieldInstanceProperties>
-                <fieldItem>Record.Document_Status__c</fieldItem>
-                <identifier>RecordDocument_Status__cColumn2Field0</identifier>
+                <fieldItem>Record.Website</fieldItem>
+                <identifier>RecordWebsiteColumn2Field0</identifier>
             </fieldInstance>
         </itemInstances>
-        
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Issue_Date__c</fieldItem>
-                <identifier>RecordIssue_Date__cColumn2Field1</identifier>
-            </fieldInstance>
-        </itemInstances>
-        
-        <itemInstances>
-            <fieldInstance>
-                <fieldInstanceProperties>
-                    <name>uiBehavior</name>
-                    <value>none</value>
-                </fieldInstanceProperties>
-                <fieldItem>Record.Expiration_Date__c</fieldItem>
-                <identifier>RecordExpiration_Date__cColumn2Field2</identifier>
-            </fieldInstance>
-        </itemInstances>
-        
+
         <name>Facet-FieldSection-Column2</name>
         <type>Facet</type>
     </flexiPageRegions>
@@ -358,9 +325,9 @@
         <name>sidebar</name>
         <type>Region</type>
     </flexiPageRegions>
-    <description>Default Lightning record page for Client Document.</description>
-    <masterLabel>Client Document Record Page</masterLabel>
-    <sobjectType>Client_Document__c</sobjectType>
+    <description>Default Lightning record page for Account, including the Client Documents related list.</description>
+    <masterLabel>Account Record Page</masterLabel>
+    <sobjectType>Account</sobjectType>
     <template>
         <name>flexipage:recordHomeTemplateDesktop</name>
     </template>
